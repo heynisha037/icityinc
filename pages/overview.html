@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="overview.js"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="../css/overview.css?v=14" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="../css/navbar.css?v=1" rel="stylesheet"/>
+<link href="../css/footer.css?v=22" rel="stylesheet"/>
+</head>
+<body class="bg-background text-on-background font-body-md">
+<!-- Site navbar -->
+<header class="site-header" id="site-header">
+<nav class="site-nav" aria-label="Main navigation">
+<div class="site-nav__bar">
+<a class="site-nav__brand" href="overview.html">
+<img alt="iCity Inc logo" class="site-nav__logo" src="../assets/logo1.png" width="160" height="60"/>
+</a>
+<div class="site-nav__end">
+<div class="site-nav__links">
+<a class="site-nav__link" href="overview.html">Overview</a>
+<a class="site-nav__link" href="about.html">About Us</a>
+<a class="site-nav__link" href="verticals.html"><span class="site-nav__link-full">Business Verticals</span><span class="site-nav__link-short">Verticals</span></a>
+<a class="site-nav__link" href="career.html">Career</a>
+<a class="site-nav__link" href="contact.html">Contact</a>
+</div>
+<a class="site-nav__cta" href="contact.html">Get Started</a>
+<button type="button" class="site-nav__toggle" aria-expanded="false" aria-controls="site-nav-panel" aria-label="Toggle navigation menu">
+<span class="site-nav__toggle-icon site-nav__toggle-icon--open material-symbols-outlined" aria-hidden="true">menu</span>
+<span class="site-nav__toggle-icon site-nav__toggle-icon--close material-symbols-outlined" aria-hidden="true">close</span>
+</button>
+</div>
+</div>
+<div class="site-nav__panel" id="site-nav-panel">
+<div class="site-nav__panel-inner">
+<a class="site-nav__link site-nav__link--panel" href="overview.html">Overview</a>
+<a class="site-nav__link site-nav__link--panel" href="about.html">About Us</a>
+<a class="site-nav__link site-nav__link--panel" href="verticals.html">Business Verticals</a>
+<a class="site-nav__link site-nav__link--panel" href="career.html">Career</a>
+<a class="site-nav__link site-nav__link--panel" href="contact.html">Contact</a>
+<a class="site-nav__cta site-nav__cta--panel" href="contact.html">Get Started</a>
+</div>
+</div>
+</nav>
+</header>
+<!-- New Hero Section -->
+<section class="relative min-h-[480px] flex items-center overflow-hidden bg-white">
+<div class="absolute inset-0 z-0 pointer-events-none white">
+<div class="squares">
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+<div class="square"></div>
+</div>
+</div>
+<div class="absolute right-0 bottom-0 w-[40%] h-[60%] bg-[#f9ab00]/8 rounded-l-full z-0"></div>
+<div class="absolute -right-20 -top-20 w-96 h-96 bg-[#002b5b]/3 rounded-full blur-3xl z-0"></div>
+<div class="relative z-10 w-full max-w-7xl mx-auto px-3 lg:px-8 grid grid-cols-12 gap-4 items-center py-2">
+<div class="col-span-12 lg:col-span-6 flex flex-col items-start gap-6">
+<div class="inline-flex items-center gap-0">
+<span class="text-[#f9ab00] text-xs font-semibold uppercase tracking-[0.2em]">Live Innovation</span>
+<div class="w-12 h-px bg-[#f9ab00] ml-3"></div>
+</div>
+<h1 class="text-[clamp(2.4rem,6vw,4rem)] leading-[1.15] tracking-[-0.02em] font-extrabold text-[#001736] max-w-2xl">
+We turn emotions into design, and <span class="text-[#f9ab00]">ideas into code.</span>
+</h1>
+<p class="text-base leading-relaxed text-slate-600 max-w-lg">
+Where creativity and technology come together seamlessly. Icity Inc orchestrates complex digital ecosystems for a connected world.
+</p>
+<div class="flex flex-wrap gap-3 pt-2">
+<a class="px-6 py-3 bg-[#001736] text-white rounded-lg text-base font-semibold flex items-center gap-2 shadow-md hover:bg-[#002b5b] hover:-translate-y-0.5 transition-all" href="contact.html">
+Get Started
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+<a class="px-6 py-3 border-2 border-slate-300 text-[#001736] rounded-lg text-base font-semibold hover:bg-slate-50 transition-all" href="verticals.html">
+View Portfolio
+<span class="material-symbols-outlined text-base">arrow_forward</span>
+</a>
+</div>
+</div>
+<div class="col-span-12 lg:col-span-6 relative">
+<div class="relative w-full max-w-[600px] mx-auto">
+<!-- Main image with organic blob shape -->
+<div class="relative w-full aspect-video overflow-hidden z-20 hero-organic-shape shadow-2xl">
+<img alt="Team of professionals collaborating in a modern office" class="w-full h-full object-cover block" src="../assets/business-meeting-office.jpg"/>
+</div>
+
+<!-- Top-right badge -->
+<div class="absolute -top-3 -right-6 md:-right-8 bg-[#001736] text-white pl-3 pr-4 py-2.5 rounded-2xl shadow-lg z-30 flex items-center gap-2.5 max-w-[min(100%,280px)]">
+<span class="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-[#f9ab00] text-[#001736]">
+<span class="material-symbols-outlined text-[1.125rem] leading-none">lightbulb</span>
+</span>
+<span class="text-[11px] sm:text-xs font-semibold leading-snug">Complexity simplified through design.</span>
+</div>
+
+<!-- Bottom-right orange accent -->
+<div class="absolute -bottom-8 -right-12 w-40 h-40 bg-gradient-to-br from-[#f9ab00] to-[#ff8c42] rounded-3xl opacity-90 z-[25] transform -rotate-12 shadow-lg"></div>
+</div>
+</div>
+</div>
+</section>
+<!-- Stats Section -->
+<section class="stats-clean-section py-20">
+<div class="max-w-7xl mx-auto px-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<article class="stats-clean-card">
+<div class="stats-clean-icon-wrap"><span class="material-symbols-outlined">groups</span></div>
+<div class="stats-clean-number-row">
+<span class="stats-clean-number">9+</span>
+<span class="stats-clean-badge">+2</span>
+</div>
+<div class="stats-clean-line"></div>
+<p class="stats-clean-label">Team Associates</p>
+</article>
+<article class="stats-clean-card">
+<div class="stats-clean-icon-wrap"><span class="material-symbols-outlined">business_center</span></div>
+<div class="stats-clean-number-row">
+<span class="stats-clean-number">10+</span>
+</div>
+<div class="stats-clean-line"></div>
+<p class="stats-clean-label">Years of Experience</p>
+</article>
+<article class="stats-clean-card">
+<div class="stats-clean-icon-wrap"><span class="material-symbols-outlined">apartment</span></div>
+<div class="stats-clean-number-row">
+<span class="stats-clean-number">6+</span>
+</div>
+<div class="stats-clean-line"></div>
+<p class="stats-clean-label">Business Verticals</p>
+</article>
+<article class="stats-clean-card">
+<div class="stats-clean-icon-wrap"><span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">handshake</span></div>
+<div class="stats-clean-number-row">
+<span class="stats-clean-number">5+</span>
+<span class="stats-clean-badge">TOP</span>
+</div>
+<div class="stats-clean-line"></div>
+<p class="stats-clean-label">Happy Clients</p>
+</article>
+</div>
+</div>
+</section>
+<!-- Business Verticals Section -->
+<section class="py-18 bg-surface-container-lowest">
+<div class="max-w-7xl mx-auto px-8 card-section-shell">
+<div class="text-center mb-16 space-y-4">
+<h2 class="font-headline-xl text-5xl md:text-6xl font-extrabold text-primary">Our Business Verticals</h2>
+<div class="h-1.5 w-24 bg-secondary-container mx-auto rounded-full"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl mx-auto">Diverse solutions tailored for modern living and enterprise growth.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- iCity Coworks -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group border border-outline-variant/30">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" alt="Modern open-plan coworking office with professionals collaborating at shared desks" src="../assets/coworks.jpg"/>
+</div>
+<div class="p-6 space-y-3">
+<h3 class="font-headline-md text-headline-md text-primary text-black-bold text-2xl font-bold">Icity Coworks</h3>
+<p class="text-on-surface-variant font-body-md">Premium flexible workspace solutions for startups and established enterprises.</p>
+<a class="explore-btn" href="https://icitycoworks.com/" target="_blank" rel="noopener noreferrer">Explore Coworks <span class="material-symbols-outlined text-sm">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- iCity Woodworks -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group border border-outline-variant/30">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="High-quality custom wood furniture craftsmanship in a bright professional carpentry studio environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuClaWB62bB_5sQx6EqEIziADmQy1HtOy8QXjxeeUwT5UftAwcRRQOIS8cCnKU82lHnpTjmTlpx8MjtC1-_r_a9PFmLQU0pG5EPJcPWirFpPjv3i7YDyPmqoF3ycTnXKzG3KxeuNMgxaaSt2bmtcijgg7sTiMzYDKa9jeKUfJT_rJWK6GfGyHCaYBupIlQirCjSQHnt-IwWf53GnCEk4BTF_c4qtdTw-JuuCk9U4UcNEFA21UDCeEuEtn_nJHArLvsZwxhx3DYNcc-EV"/>
+</div>
+<div class="p-6 space-y-3">
+<h3 class="font-headline-md text-headline-md text-primary text-black-bold text-2xl font-bold"">Icity Woodworks</h3>
+<p class="text-on-surface-variant font-body-md">Artisanal furniture and interior woodwork crafted for lasting elegance.</p>
+<a class="explore-btn" href="https://icitywoodworks.com/">Explore Woodworks <span class="material-symbols-outlined text-sm">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- iCity Technologies -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group border border-outline-variant/30">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close-up of high-tech circuit board with blue neon lighting highlights and futuristic aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJgLcqmgzgIjP688oSMMoM4plsn6bELqrPGEtHu4aPtTuP7ZDCyqseMgs33q99uf0AoQBDegC5z_0pyiCMeJNMFpp5HgYA3rN_aOpztFRHHzn3eJ-Vdn3XMN7dbShWt9gASAIjEPmfNUHNLQS12In1GKTkEk3MZtibs7TXcG1FC19a1U9tRXeYg9Qn_7JrVvnueIFpKFlDFmjKUBjbHPMRj_58zULiLVO6sILjmgOB7hGIhNDV_LDVepRj8s2jCqIXNiyC7WbgJYTv"/>
+</div>
+<div class="p-6 space-y-3">
+<h3 class="font-headline-md text-headline-md text-primary text-black-bold text-2xl font-bold"">Icity Technologies</h3>
+<p class="text-on-surface-variant font-body-md">Cutting-edge software and hardware solutions driving digital transformation.</p>
+<a class="explore-btn" href="https://icitytechnologies.com/">Explore Technologies <span class="material-symbols-outlined text-sm">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- iCity Realtors -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group border border-outline-variant/30">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Luxury residential property exterior with manicured gardens at sunset with warm architectural lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD0APMB9bkTiKs7cgcrGXyMyk8sJzZ7tfLaOJM-uGIcp-JcbughKbOoZcDMhmJm9nYo_gWcFmExVMa_gIQ1WSbM-mG2zLuy6Qr-p1zYvOXupoTLGSsXwUkIasP9U8v22mdVbcV_1WnVsSpcz15814MIaoQVNO0vMTFijphQyxmllJ2f99qzX9EZxjoDE1Dq1-16rO-Y-arA3QY-LgeHt1OUCSpEXKcSGn07gozyK5NeqaJ8Ui1-D_s_jHQy82YdTgZbkkj_Oxhi58HB"/>
+</div>
+<div class="p-6 space-y-3">
+<h3 class="font-headline-md text-headline-md text-primary text-black-bold text-2xl font-bold"">Icity Realtors</h3>
+<p class="text-on-surface-variant font-body-md">Connecting you to premium real estate and commercial property investments.</p>
+<a class="explore-btn" href="https://www.icityrealtors.com/">Explore Realtors <span class="material-symbols-outlined text-sm">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- iCity Gadgets -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group border border-outline-variant/30">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Sleek modern consumer electronics and high-end headphones on a clean minimalist surface" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBr2_GymsKGk2CbFvOGJlkxl_768nzGl4o-ML0YhVKfzkoD4YmoGCYHTxZzZJjZt8iIxMhRNMMG65Zdd6XzC7qC502RmVSXkNt8oC0rtBUIXy_z5q3gXQIO4ax0JTSI0NonTGek-kBGH7D3P44pc2diwlDhmTm0kaaa9u5_2hpweEwjnWcgiML_2c6gfQwXe2kdJszvCEnKmJse3CyDSv357-JcEJRyzqQuqdoHbDXHhQ5dMW8XAua1qnTAlRZvqkFROB-PrSsbRq1I"/>
+</div>
+<div class="p-6 space-y-3">
+<h3 class="font-headline-md text-headline-md text-primary text-black-bold text-2xl font-bold"">Icity Gadgets</h3>
+<p class="text-on-surface-variant font-body-md">Smart devices and productivity tools for the modern digital nomad.</p>
+<a class="explore-btn" href="https://icitygadgets.com/">Explore Gadgets <span class="material-symbols-outlined text-sm">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- iCity Foods -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group border border-outline-variant/30">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Gourmet artisanal dishes beautifully plated on a rustic table in a cozy bistro atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBG62HxN4dFWYegWLwjSBuoADbm0uB0GIiFDvKoxsx1-h3aL2PwRavHFP9ddKNO96ZYJ3GYKYKj7H1b7UHgtHPg9i4rSaasC1pm3_C7MLCpfr6s6Zeg7-mKJBiOv6LNGmQCrfyf7-hXflWgv1iTYpXxyN4OnXaG66_NuyRhceCBuV-ABkO5pdnfvgtrhebX-iiEguirgNkt_i3ErADyKI36AulR9pQxqLqBzwqOk8Qns1eAyBtS8jHflugCYW0P7ae9e4pTaES0O7mP"/>
+</div>
+<div class="p-6 space-y-3">
+<h3 class="font-headline-md text-headline-md text-primary text-black-bold text-2xl font-bold"">Icity Foods</h3>
+<p class="text-on-surface-variant font-body-md">Exquisite culinary experiences and sustainable food supply chains.</p>
+<a class="explore-btn" href="https://icityfoods.com/">Explore Foods <span class="material-symbols-outlined text-sm">arrow_right_alt</span></a>
+</div>
+</div>
+<!-- iCity Education -->
+<div class="bg-white rounded-xl overflow-hidden shadow-sm hover:shadow-md transition-all group border border-outline-variant/30 lg:col-start-2">
+<div class="h-48 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Modern classroom with students using laptops and interactive digital displays in a bright learning environment" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB6iOpLw-_J9HXjTD8e0YGE_UmpSEF_VPGAqwZEsmnSObFn6865K1HuraYCrfqT0qThshr1TejWgW-Bg3vY45DH_TBlfuH6G_6m45WdJhEtqkjpp8-c8iD-TbF--ybhnQAdQcujAYeX1QOpwiR3IdZcgm03ZkAd0kmXyhiL9Vb8Tfna0GnlaAdOONmurzpJBf47mBp2HXmvQvmRNJNFKTfl6VdDyrCiu3ciDkQAbeYbPqxpgHIEiKem56qO2vP4hwR4kcqbeNKl9Pic"/>
+</div>
+<div class="p-6 space-y-3">
+<h3 class="font-headline-md text-headline-md text-primary text-black-bold text-2xl font-bold"">Icity Education</h3>
+<p class="text-on-surface-variant font-body-md">Innovative learning platforms and educational resources designed for the digital age.</p>
+<a class="explore-btn" href="https://icityeducation.com/">Explore Education <span class="material-symbols-outlined text-sm">arrow_right_alt</span></a>
+</div>
+</div></div>
+</div>
+</section>
+<!-- Why iCity Inc Section -->
+<section class="why-icity-section">
+<div class="max-w-7xl mx-auto px-6 lg:px-8 why-icity-section__content">
+<div class="why-icity-header text-center max-w-3xl mx-auto">
+<span class="why-icity-kicker">Why ICITY INC</span>
+<h2 class="why-icity-section__title">Built for partners who expect more</h2>
+<div class="why-icity-header__line" aria-hidden="true"></div>
+<p class="why-icity-section__lead">We combine decades of industrial expertise with fresh innovation to deliver unmatched value across every vertical we operate.</p>
+</div>
+<div class="why-icity-body grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch">
+<aside class="why-icity-intro lg:col-span-4">
+<p class="why-icity-intro__label">Our promise</p>
+<h3>One group.<br>Many verticals.<br>One standard of excellence.</h3>
+<p>From coworking and woodworks to technology and real estate, Icity Inc brings the same clarity, craft, and commitment to every engagement.</p>
+<a class="why-icity-cta mt-8" href="contact.html">Partner With Us <span class="material-symbols-outlined text-base">arrow_forward</span></a>
+</aside>
+<div class="lg:col-span-8 grid grid-cols-1 sm:grid-cols-2 gap-5">
+<article class="why-icity-pillar">
+<div class="why-icity-pillar-icon why-icity-pillar-icon--amber"><span class="material-symbols-outlined">visibility</span></div>
+<h4>Clear Vision</h4>
+<p>Strategic foresight in every vertical.</p>
+</article>
+<article class="why-icity-pillar">
+<div class="why-icity-pillar-icon why-icity-pillar-icon--sky"><span class="material-symbols-outlined">groups</span></div>
+<h4>Expert Team</h4>
+<p>Industry leaders at the helm.</p>
+</article>
+<article class="why-icity-pillar">
+<div class="why-icity-pillar-icon why-icity-pillar-icon--emerald"><span class="material-symbols-outlined">lightbulb</span></div>
+<h4>Innovation First</h4>
+<p>Pioneering new standards.</p>
+</article>
+<article class="why-icity-pillar">
+<div class="why-icity-pillar-icon why-icity-pillar-icon--orange"><span class="material-symbols-outlined">handshake</span></div>
+<h4>Trusted Partner</h4>
+<p>Reliability in every contract.</p>
+</article>
+<article class="why-icity-pillar sm:col-span-2 lg:col-span-1">
+<div class="why-icity-pillar-icon why-icity-pillar-icon--gold"><span class="material-symbols-outlined">headset</span></div>
+<h4>Quick Support</h4>
+<p>Here when you need us, always.</p>
+</article>
+</div>
+</div>
+</div>
+</section>
+<!-- Newsletter Bar -->
+<section class="newsletter-section">
+<div class="newsletter-orb newsletter-orb-left"></div>
+<div class="newsletter-orb newsletter-orb-right"></div>
+<div class="newsletter-ring newsletter-ring-left"></div>
+<div class="newsletter-ring newsletter-ring-right"></div>
+<div class="newsletter-shell">
+<div class="newsletter-icon-wrap">
+<span class="material-symbols-outlined">mail</span>
+</div>
+<span class="newsletter-kicker">NEWSLETTER</span>
+<h3>Subscribe to our Newsletter</h3>
+<p>Get the latest updates, tips, and exclusive content straight to your inbox.</p>
+<form action="https://formsubmit.co" class="newsletter-form" method="post" onsubmit="subscribeNewsletter(event)">
+<input name="_subject" type="hidden" value="New Newsletter Subscription - Icity Inc"/>
+<input name="_captcha" type="hidden" value="false"/>
+<input name="_template" type="hidden" value="table"/>
+<span class="material-symbols-outlined newsletter-input-icon">mail</span>
+<input id="newsletter-email" name="email" placeholder="Enter your email" required="" type="email"/>
+<button type="submit">
+                    Subscribe
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</form>
+<div id="success-message" style="display:none; color: green; margin-top: 10px;">Subscription successful! Check your email for confirmation.</div>
+</div>
+</section>
+<footer class="site-footer">
+<div class="site-footer__inner">
+<div class="site-footer__grid">
+<div class="site-footer__brand">
+<img alt="iCity Inc logo" class="site-footer__logo" src="../assets/final logo.png" width="140" height="auto"/>
+<p class="site-footer__tagline">A global conglomerate leading in technology, real estate, and professional services across multiple continents.</p>
+<p class="site-footer__social-label">Follow us</p>
+<div class="site-footer__social">
+<a class="site-footer__social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.7-1.6h1.5V4.8c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.3-3.8 3.9V11H8v3h2.7v8h2.8z"/></svg>
+</a>
+<a class="site-footer__social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm0 1.9A3.9 3.9 0 0 0 3.9 7.8v8.4a3.9 3.9 0 0 0 3.9 3.9h8.4a3.9 3.9 0 0 0 3.9-3.9V7.8a3.9 3.9 0 0 0-3.9-3.9H7.8zm8.9 1.4a1.2 1.2 0 1 1 0 2.3 1.2 1.2 0 0 1 0-2.3zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.9A3.1 3.1 0 1 0 12 15a3.1 3.1 0 0 0 0-6.2z"/></svg>
+</a>
+<a class="site-footer__social-link" href="https://wa.me/918098431431" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12zm-8-6.5a6.5 6.5 0 0 0-5.6 9.8l.2.3-.6 2.3 2.4-.6.3.2a6.5 6.5 0 1 0 3.3-12z"/><path d="M15.8 13.7c-.2-.1-1.2-.6-1.3-.7-.2-.1-.3-.1-.4.1l-.4.6c-.1.1-.2.2-.4.1-.2-.1-.7-.3-1.4-.9-.5-.4-.9-1-.9-1.1s0-.2.1-.3l.3-.3.2-.3c.1-.1 0-.2 0-.3l-.4-1c-.1-.2-.2-.2-.4-.2h-.3c-.1 0-.3.1-.4.2-.1.1-.5.5-.5 1.2s.5 1.5.6 1.6c.1.1 1 1.6 2.5 2.2.4.2.8.3 1 .4.4.1.8.1 1 .1.3 0 1.2-.5 1.3-.9.2-.4.2-.8.1-.9 0-.1-.2-.1-.4-.2z"/></svg>
+</a>
+<a class="site-footer__social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.3 8.4a1.8 1.8 0 1 1 0-3.5 1.8 1.8 0 0 1 0 3.5zM3.7 9.8h3.2V20H3.7V9.8zm5.2 0H12v1.4h.1c.4-.8 1.5-1.7 3.1-1.7 3.3 0 3.9 2.2 3.9 5V20h-3.2v-4.7c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5V20H8.9V9.8z"/></svg>
+</a>
+</div>
+</div>
+<nav class="site-footer__col" aria-label="Verticals">
+<div class="site-footer__heading-wrap">
+<h4 class="site-footer__heading"><span class="site-footer__heading-dot" aria-hidden="true"></span>Verticals</h4>
+<span class="site-footer__heading-line" aria-hidden="true"></span>
+</div>
+<ul class="site-footer__links">
+<li><a href="https://icitycoworks.com/">Icity Coworks</a></li>
+<li><a href="https://icitywoodworks.com/">Icity Woodworks</a></li>
+<li><a href="https://icitytechnologies.com/">Icity Technologies</a></li>
+<li><a href="https://icityrealtors.com/">Icity Realtors</a></li>
+<li><a href="https://icitygadgets.com/">Icity Gadgets</a></li>
+<li><a href="https://icityfoods.com/">Icity Foods</a></li>
+<li><a href="https://icityeducation.com/">Icity Education</a></li>
+</ul>
+</nav>
+<nav class="site-footer__col" aria-label="Site information">
+<div class="site-footer__heading-wrap">
+<h4 class="site-footer__heading"><span class="site-footer__heading-dot" aria-hidden="true"></span>Info</h4>
+<span class="site-footer__heading-line" aria-hidden="true"></span>
+</div>
+<ul class="site-footer__links">
+<li><a href="overview.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="verticals.html">Business verticals</a></li>
+<li><a href="career.html">Career</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<div class="site-footer__col site-footer__col--contact">
+<div class="site-footer__heading-wrap">
+<h4 class="site-footer__heading"><span class="site-footer__heading-dot" aria-hidden="true"></span>Contact info</h4>
+<span class="site-footer__heading-line" aria-hidden="true"></span>
+</div>
+<ul class="site-footer__contact">
+<li>
+<span class="site-footer__contact-icon" aria-hidden="true"><span class="material-symbols-outlined">location_on</span></span>
+<span class="site-footer__contact-text"><span class="site-footer__contact-line">No. 09, Om Ganesh Nagar, 3rd Cross East,</span><span class="site-footer__contact-line">Vadavalli, Coimbatore – 641041, India</span></span>
+</li>
+<li>
+<span class="site-footer__contact-icon" aria-hidden="true"><span class="material-symbols-outlined">mail</span></span>
+<a href="mailto:business@icityinc.com">business@icityinc.com</a>
+</li>
+<li>
+<span class="site-footer__contact-icon" aria-hidden="true"><span class="material-symbols-outlined">call</span></span>
+<a href="tel:+918098431431">+91-80984 31431</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="site-footer__legal">
+<p>© 2026 Icity Inc. <a href="#">Privacy policy</a>. All rights reserved.</p>
+</div>
+</footer>
+<script>
+function subscribeNewsletter(event) {
+    event.preventDefault();
+    const email = document.getElementById('newsletter-email').value;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email))
+    {
+        alert('Please enter a valid email address.');
+        return;
+    }
+    // Save to localStorage
+    let subscribers = JSON.parse(localStorage.getItem('newsletter_subscribers') || '[]');
+    if (!subscribers.includes(email)) {
+        subscribers.push(email);
+        localStorage.setItem('newsletter_subscribers', JSON.stringify(subscribers));
+    }
+    // Set action to user's email
+    event.target.action = 'https://formsubmit.co/' + email;
+    // Show success message
+    document.getElementById('success-message').style.display = 'block';
+    // Submit the form after a short delay
+    setTimeout(() => {
+        event.target.submit();
+    }, 1000);
+}
+</script>
+<script src="../js/navbar.js"></script>
+</body></html>

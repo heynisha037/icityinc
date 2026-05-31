@@ -1,0 +1,10 @@
+{
+  "name": "icityinc-site",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "build": "node scripts/build.js",
+    "preview": "python -m http.server 8080"
+  }
+}

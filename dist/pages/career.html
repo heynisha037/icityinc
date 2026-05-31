@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "secondary": "#825500",
+                      "secondary-fixed": "#ffddb4",
+                      "on-background": "#191c1d",
+                      "surface-container-high": "#e7e8e9",
+                      "on-tertiary-fixed": "#241a00",
+                      "on-secondary-fixed": "#291800",
+                      "inverse-on-surface": "#f0f1f2",
+                      "secondary-container": "#feb23d",
+                      "surface-dim": "#d9dadb",
+                      "outline": "#747780",
+                      "tertiary-fixed": "#ffe088",
+                      "surface-variant": "#e1e3e4",
+                      "on-secondary-container": "#6e4700",
+                      "primary-fixed-dim": "#a9c7ff",
+                      "outline-variant": "#c4c6d0",
+                      "tertiary-fixed-dim": "#e9c349",
+                      "primary-fixed": "#d6e3ff",
+                      "inverse-primary": "#a9c7ff",
+                      "inverse-surface": "#2e3132",
+                      "on-secondary": "#ffffff",
+                      "on-primary-fixed-variant": "#264778",
+                      "on-secondary-fixed-variant": "#633f00",
+                      "tertiary": "#735c00",
+                      "on-surface": "#191c1d",
+                      "error": "#ba1a1a",
+                      "surface-container": "#edeeef",
+                      "primary-container": "#002b5b",
+                      "on-error": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "on-tertiary-container": "#4e3d00",
+                      "tertiary-container": "#cba72f",
+                      "surface-container-low": "#f3f4f5",
+                      "surface-container-highest": "#e1e3e4",
+                      "on-tertiary-fixed-variant": "#574500",
+                      "surface": "#f8f9fa",
+                      "on-tertiary": "#ffffff",
+                      "on-error-container": "#93000a",
+                      "surface-tint": "#405f91",
+                      "surface-container-lowest": "#ffffff",
+                      "on-primary-container": "#7594ca",
+                      "on-primary-fixed": "#001b3d",
+                      "background": "#f8f9fa",
+                      "on-primary": "#ffffff",
+                      "primary": "#001736",
+                      "surface-bright": "#f8f9fa",
+                      "on-surface-variant": "#43474f",
+                      "secondary-fixed-dim": "#ffb953"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.25rem",
+                      "lg": "0.5rem",
+                      "xl": "0.75rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "unit": "8px",
+                      "section-padding": "80px",
+                      "container-max": "1280px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "headline-lg": ["Inter"],
+                      "headline-xl": ["Inter"],
+                      "display-lg": ["Inter"],
+                      "headline-md": ["Inter"],
+                      "body-lg": ["Inter"],
+                      "label-md": ["Inter"],
+                      "body-md": ["Inter"]
+              },
+              "fontSize": {
+                      "headline-lg": ["32px", {"lineHeight": "1.3", "fontWeight": "600"}],
+                      "headline-xl": ["40px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                      "display-lg": ["56px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                      "headline-md": ["24px", {"lineHeight": "1.4", "fontWeight": "600"}],
+                      "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                      "label-md": ["14px", {"lineHeight": "1.2", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                      "body-md": ["16px", {"lineHeight": "1.6", "fontWeight": "400"}]
+              }
+            },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .gentle-fade { transition: opacity 0.3s ease; }
+        .career-excellence__panel {
+            position: relative;
+            overflow: hidden;
+            border-radius: 2.5rem;
+            padding: clamp(3rem, 6vw, 5rem) clamp(2rem, 5vw, 5rem);
+            min-height: clamp(16rem, 32vw, 20rem);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 3rem;
+            background-color: #f39200;
+            background-image: url("../assets/career-excellence-banner.png");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        @media (min-width: 1024px) {
+            .career-excellence__panel {
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+        .career-excellence__copy h2,
+        .career-excellence__copy p {
+            color: #ffffff;
+            text-shadow: 0 2px 12px rgba(0, 23, 54, 0.25);
+        }
+        .career-excellence__copy p {
+            opacity: 0.92;
+        }
+    </style>
+<link href="../css/navbar.css?v=1" rel="stylesheet"/>
+<link href="../css/footer.css?v=22" rel="stylesheet"/>
+</head>
+<body class="bg-background font-body-md text-on-surface antialiased">
+<!-- Site navbar -->
+<header class="site-header" id="site-header">
+<nav class="site-nav" aria-label="Main navigation">
+<div class="site-nav__bar">
+<a class="site-nav__brand" href="overview.html">
+<img alt="iCity Inc logo" class="site-nav__logo" src="../assets/logo1.png" width="160" height="60"/>
+</a>
+<div class="site-nav__end">
+<div class="site-nav__links">
+<a class="site-nav__link" href="overview.html">Overview</a>
+<a class="site-nav__link" href="about.html">About Us</a>
+<a class="site-nav__link" href="verticals.html"><span class="site-nav__link-full">Business Verticals</span><span class="site-nav__link-short">Verticals</span></a>
+<a class="site-nav__link" href="career.html">Career</a>
+<a class="site-nav__link" href="contact.html">Contact</a>
+</div>
+<a class="site-nav__cta" href="contact.html">Get Started</a>
+<button type="button" class="site-nav__toggle" aria-expanded="false" aria-controls="site-nav-panel" aria-label="Toggle navigation menu">
+<span class="site-nav__toggle-icon site-nav__toggle-icon--open material-symbols-outlined" aria-hidden="true">menu</span>
+<span class="site-nav__toggle-icon site-nav__toggle-icon--close material-symbols-outlined" aria-hidden="true">close</span>
+</button>
+</div>
+</div>
+<div class="site-nav__panel" id="site-nav-panel">
+<div class="site-nav__panel-inner">
+<a class="site-nav__link site-nav__link--panel" href="overview.html">Overview</a>
+<a class="site-nav__link site-nav__link--panel" href="about.html">About Us</a>
+<a class="site-nav__link site-nav__link--panel" href="verticals.html">Business Verticals</a>
+<a class="site-nav__link site-nav__link--panel" href="career.html">Career</a>
+<a class="site-nav__link site-nav__link--panel" href="contact.html">Contact</a>
+<a class="site-nav__cta site-nav__cta--panel" href="contact.html">Get Started</a>
+</div>
+</div>
+</nav>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative max-w-7xl mx-auto px-8 py-20 lg:py-32 flex flex-col lg:flex-row items-center gap-16 bg-gradient-to-br from-sky-50 via-blue-50 to-indigo-100 overflow-hidden">
+<!-- Floating Elements -->
+<div class="absolute top-10 left-10 w-20 h-20 bg-blue-200 rounded-full opacity-20 animate-bounce" style="animation-delay: 0s;"></div>
+<div class="absolute top-32 right-20 w-16 h-16 bg-indigo-200 rounded-full opacity-30 animate-pulse" style="animation-delay: 1s;"></div>
+<div class="absolute bottom-20 left-1/4 w-12 h-12 bg-sky-200 rounded-full opacity-25 animate-bounce" style="animation-delay: 2s;"></div>
+<div class="absolute bottom-32 right-10 w-24 h-24 bg-blue-100 rounded-full opacity-15 animate-pulse" style="animation-delay: 0.5s;"></div>
+<div class="absolute top-1/2 left-1/2 w-8 h-8 bg-indigo-300 rounded-full opacity-40 animate-ping" style="animation-delay: 1.5s;"></div>
+<div class="lg:w-1/2 space-y-8">
+<h1 class="font-display-lg text-display-lg text-primary font-black tracking-tight">Discover Career Future</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg">Join a team driven by innovation, creativity, and growth. Explore exciting career opportunities and shape the future with us.</p>
+<div class="flex items-center gap-4">
+<button class="bg-secondary-container text-on-secondary-container px-8 py-4 rounded-lg font-headline-md flex items-center gap-3 hover:shadow-xl hover:-translate-y-0.5 active:scale-95 transition-all duration-300"href="contact.html">
+                        Apply here
+                        <span class="material-symbols-outlined" data-icon="check_circle" data-weight="fill" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</button>
+</div>
+</div>
+<div class="lg:w-1/2 relative">
+<div class="relative rounded-full overflow-hidden aspect-square max-w-md mx-auto border-8 border-white shadow-xl">
+<img class="w-full h-full object-cover" data-alt="professional young woman smiling in a black business top with soft office lighting background and clean aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA4zIhmCMPBB-1THZZaac-voB-X4vue0Ooq-CaDZWZ0L0lv5qIfc79s3mloTHXv9ZnQCWkw8QRqkYRISZnadv9RXtMAo5UPQRVHhiyXN6iFDHg9hqMp9Ua8ant-yX8v-dN0pGZg1QKBAAA2iD7Sq5dqbyIwMOcTpV_WRrvAnqdWfCn0SNBt-G5gXBOJ8aWm3POjIEaHYiJSBuoflAKjSsBI8JH1GKts981bZlBuOnsTQKcrstzUvThfeTN44Ed_rSOwfIawF2QXXYA0"/>
+</div>
+<div class="absolute bottom-4 left-4 md:bottom-6 md:left-6 bg-white/90 backdrop-blur-sm shadow-[0_20px_50px_rgba(0,0,0,0.1)] rounded-2xl px-6 py-4 flex items-center gap-4 border border-white/50">
+<div class="bg-secondary-container p-2.5 rounded-xl shadow-inner">
+<span class="material-symbols-outlined text-on-secondary-container text-2xl" data-icon="work">work</span>
+</div>
+<div>
+<p class="font-headline-md text-primary m-0 leading-tight">5+ Open Position</p>
+<p class="text-[10px] uppercase tracking-widest text-outline font-bold mt-0.5">Hiring Now</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Why Work With Us -->
+<section class="max-w-7xl mx-auto px-8 py-section-padding grid lg:grid-cols-2 gap-16 items-center">
+<div>
+<div class="rounded-3xl overflow-hidden shadow-2xl">
+<img class="w-full h-[500px] object-cover" data-alt="ICITY Inc headquarters building at night with illuminated signage" src="../assets/icity inc building.png" width="1200" height="800" loading="lazy" decoding="async"/>
+</div>
+</div>
+<div class="space-y-10">
+<h2 class="font-headline-xl text-headline-xl text-primary">Why Work With Us?</h2>
+<ul class="space-y-6">
+<li class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary transition-colors group-hover:bg-secondary-container">
+<span class="material-symbols-outlined" data-icon="trending_up">trending_up</span>
+</div>
+<span class="font-headline-md text-on-surface">Career Growth</span>
+</li>
+<li class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary transition-colors group-hover:bg-secondary-container">
+<span class="material-symbols-outlined" data-icon="groups">groups</span>
+</div>
+<span class="font-headline-md text-on-surface">Supportive Culture</span>
+</li>
+<li class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary transition-colors group-hover:bg-secondary-container">
+<span class="material-symbols-outlined" data-icon="menu_book">menu_book</span>
+</div>
+<span class="font-headline-md text-on-surface">Learning Opportunities</span>
+</li>
+<li class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary transition-colors group-hover:bg-secondary-container">
+<span class="material-symbols-outlined" data-icon="redeem">redeem</span>
+</div>
+<span class="font-headline-md text-on-surface">Competitive Benefits</span>
+</li>
+<li class="flex items-center gap-4 group">
+<div class="w-12 h-12 rounded-full bg-surface-container flex items-center justify-center text-primary transition-colors group-hover:bg-secondary-container">
+<span class="material-symbols-outlined" data-icon="balance">balance</span>
+</div>
+<span class="font-headline-md text-on-surface">Work-Life Balance</span>
+</li>
+</ul>
+<button class="bg-secondary-container text-on-secondary-container px-10 py-4 rounded-lg font-headline-md hover:scale-105 transition-transform" href="contact.html">
+                    Join Our Team
+                </button>
+</div>
+</section>
+<!-- Browse by Job Categories -->
+<section class="bg-primary py-section-padding">
+<div class="max-w-7xl mx-auto px-8">
+<div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
+<div>
+<h2 class="font-headline-xl text-headline-xl text-white mb-4">Browse by Job Categories</h2>
+<p class="text-primary-fixed-dim font-body-lg max-w-2xl">Find your perfect fit among our various business units and specialized domains.</p>
+</div>
+<div class="bg-white/10 backdrop-blur-md p-6 rounded-2xl border border-white/10 flex items-center gap-6">
+<div class="text-white">
+<p class="font-display-lg text-display-lg leading-none">10+</p>
+<p class="font-label-md text-primary-fixed-dim uppercase tracking-widest mt-2">Jobs are waiting</p>
+</div>
+<span class="material-symbols-outlined text-secondary-container text-5xl" data-icon="rocket_launch">rocket_launch</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Job Card 1 -->
+<div class="group bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 border border-gray-100 hover:border-blue-200 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-blue-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="relative z-10">
+<div class="w-20 h-20 bg-gradient-to-br from-blue-100 to-blue-200 rounded-3xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-blue-600 text-4xl" data-icon="brush">brush</span>
+</div>
+<h3 class="font-headline-md text-primary mb-2 font-bold">UI/UX Design</h3>
+<p class="font-label-md text-outline mb-8">2+ Available Vacancy</p>
+<button class="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black py-3 rounded-xl font-label-md hover:from-yellow-500 hover:to-yellow-600 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105">Apply now</button>
+</div>
+</div>
+<!-- Job Card 2 -->
+<div class="group bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 border border-gray-100 hover:border-green-200 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-green-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="relative z-10">
+<div class="w-20 h-20 bg-gradient-to-br from-green-100 to-green-200 rounded-3xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-green-600 text-4xl" data-icon="campaign">campaign</span>
+</div>
+<h3 class="font-headline-md text-primary mb-2 font-bold">Digital Marketing</h3>
+<p class="font-label-md text-outline mb-8">3+ Available Vacancy</p>
+<button class="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black py-3 rounded-xl font-label-md hover:from-yellow-500 hover:to-yellow-600 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105">Apply now</button>
+</div>
+</div>
+<!-- Job Card 3 -->
+<div class="group bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 border border-gray-100 hover:border-purple-200 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-purple-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="relative z-10">
+<div class="w-20 h-20 bg-gradient-to-br from-purple-100 to-purple-200 rounded-3xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-purple-600 text-4xl" data-icon="developer_mode">developer_mode</span>
+</div>
+<h3 class="font-headline-md text-primary mb-2 font-bold">IT &amp; Software</h3>
+<p class="font-label-md text-outline mb-8">2+ Available Vacancy</p>
+<button class="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black py-3 rounded-xl font-label-md hover:from-yellow-500 hover:to-yellow-600 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105">Apply now</button>
+</div>
+</div>
+<!-- Job Card 4 -->
+<div class="group bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 border border-gray-100 hover:border-red-200 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-red-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="relative z-10">
+<div class="w-20 h-20 bg-gradient-to-br from-red-100 to-red-200 rounded-3xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-red-600 text-4xl" data-icon="analytics">analytics</span>
+</div>
+<h3 class="font-headline-md text-primary mb-2 font-bold">Data Science</h3>
+<p class="font-label-md text-outline mb-8">2+ Available Vacancy</p>
+<button class="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black py-3 rounded-xl font-label-md hover:from-yellow-500 hover:to-yellow-600 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105">Apply now</button>
+</div>
+</div>
+<!-- Job Card 5 -->
+<div class="group bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 border border-gray-100 hover:border-indigo-200 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-indigo-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="relative z-10">
+<div class="w-20 h-20 bg-gradient-to-br from-indigo-100 to-indigo-200 rounded-3xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-indigo-600 text-4xl" data-icon="terminal">terminal</span>
+</div>
+<h3 class="font-headline-md text-primary mb-2 font-bold">Computer Science</h3>
+<p class="font-label-md text-outline mb-8">3+ Available Vacancy</p>
+<button class="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black py-3 rounded-xl font-label-md hover:from-yellow-500 hover:to-yellow-600 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105">Apply now</button>
+</div>
+</div>
+<!-- Job Card 6 -->
+<div class="group bg-gradient-to-br from-white to-gray-50 rounded-3xl p-8 shadow-xl hover:shadow-2xl hover:-translate-y-3 transition-all duration-500 border border-gray-100 hover:border-pink-200 relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-br from-pink-50/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+<div class="relative z-10">
+<div class="w-20 h-20 bg-gradient-to-br from-pink-100 to-pink-200 rounded-3xl flex items-center justify-center mb-6 shadow-lg group-hover:scale-110 transition-transform duration-300">
+<span class="material-symbols-outlined text-pink-600 text-4xl" data-icon="html">html</span>
+</div>
+<h3 class="font-headline-md text-primary mb-2 font-bold">Web development</h3>
+<p class="font-label-md text-outline mb-8">3+ Available Vacancy</p>
+<button class="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black py-3 rounded-xl font-label-md hover:from-yellow-500 hover:to-yellow-600 shadow-lg hover:shadow-xl transition-all duration-300 group-hover:scale-105">Apply now</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<!-- Service Excellence Banner -->
+<section class="max-w-7xl mx-auto px-8 py-section-padding">
+<div class="career-excellence__panel">
+<div class="career-excellence__copy max-w-2xl text-center lg:text-left relative z-18">
+<h2 class="font-display-lg text-headline-xl mb-6">Excellence in Every Service</br> We Deliver</h2>
+<p class="font-body-lg">Our commitment to excellence drives everything we do, </br> from internal operations to client satisfaction.</p>
+</div>
+<div class="shrink-0 relative z-10 flex justify-center lg:justify-end">
+<a class="inline-flex items-center justify-center bg-primary text-on-primary px-12 py-5 rounded-full font-headline-md shadow-2xl hover:bg-primary-container transition-colors" href="contact.html">To know more</a>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="site-footer">
+<div class="site-footer__inner">
+<div class="site-footer__grid">
+<div class="site-footer__brand">
+<img alt="iCity Inc logo" class="site-footer__logo" src="../assets/final logo.png" width="140" height="auto"/>
+<p class="site-footer__tagline">A global conglomerate leading in technology, real estate, and professional services across multiple continents.</p>
+<p class="site-footer__social-label">Follow us</p>
+<div class="site-footer__social">
+<a class="site-footer__social-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.1c0-.9.3-1.6 1.7-1.6h1.5V4.8c-.3 0-1.2-.1-2.2-.1-2.2 0-3.8 1.3-3.8 3.9V11H8v3h2.7v8h2.8z"/></svg>
+</a>
+<a class="site-footer__social-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2zm0 1.9A3.9 3.9 0 0 0 3.9 7.8v8.4a3.9 3.9 0 0 0 3.9 3.9h8.4a3.9 3.9 0 0 0 3.9-3.9V7.8a3.9 3.9 0 0 0-3.9-3.9H7.8zm8.9 1.4a1.2 1.2 0 1 1 0 2.3 1.2 1.2 0 0 1 0-2.3zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10zm0 1.9A3.1 3.1 0 1 0 12 15a3.1 3.1 0 0 0 0-6.2z"/></svg>
+</a>
+<a class="site-footer__social-link" href="https://wa.me/918098431431" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 12a8 8 0 0 1-11.6 7.1L4 20l1-4.2A8 8 0 1 1 20 12zm-8-6.5a6.5 6.5 0 0 0-5.6 9.8l.2.3-.6 2.3 2.4-.6.3.2a6.5 6.5 0 1 0 3.3-12z"/><path d="M15.8 13.7c-.2-.1-1.2-.6-1.3-.7-.2-.1-.3-.1-.4.1l-.4.6c-.1.1-.2.2-.4.1-.2-.1-.7-.3-1.4-.9-.5-.4-.9-1-.9-1.1s0-.2.1-.3l.3-.3.2-.3c.1-.1 0-.2 0-.3l-.4-1c-.1-.2-.2-.2-.4-.2h-.3c-.1 0-.3.1-.4.2-.1.1-.5.5-.5 1.2s.5 1.5.6 1.6c.1.1 1 1.6 2.5 2.2.4.2.8.3 1 .4.4.1.8.1 1 .1.3 0 1.2-.5 1.3-.9.2-.4.2-.8.1-.9 0-.1-.2-.1-.4-.2z"/></svg>
+</a>
+<a class="site-footer__social-link" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.3 8.4a1.8 1.8 0 1 1 0-3.5 1.8 1.8 0 0 1 0 3.5zM3.7 9.8h3.2V20H3.7V9.8zm5.2 0H12v1.4h.1c.4-.8 1.5-1.7 3.1-1.7 3.3 0 3.9 2.2 3.9 5V20h-3.2v-4.7c0-1.1 0-2.6-1.6-2.6s-1.8 1.2-1.8 2.5V20H8.9V9.8z"/></svg>
+</a>
+</div>
+</div>
+<nav class="site-footer__col" aria-label="Verticals">
+<div class="site-footer__heading-wrap">
+<h4 class="site-footer__heading"><span class="site-footer__heading-dot" aria-hidden="true"></span>Verticals</h4>
+<span class="site-footer__heading-line" aria-hidden="true"></span>
+</div>
+<ul class="site-footer__links">
+<li><a href="https://icitycoworks.com/">Icity Coworks</a></li>
+<li><a href="https://icitywoodworks.com/">Icity Woodworks</a></li>
+<li><a href="https://icitytechnologies.com/">Icity Technologies</a></li>
+<li><a href="https://icityrealtors.com/">Icity Realtors</a></li>
+<li><a href="https://icitygadgets.com/">Icity Gadgets</a></li>
+<li><a href="https://icityfoods.com/">Icity Foods</a></li>
+<li><a href="https://icityeducation.com/">Icity Education</a></li>
+</ul>
+</nav>
+<nav class="site-footer__col" aria-label="Site information">
+<div class="site-footer__heading-wrap">
+<h4 class="site-footer__heading"><span class="site-footer__heading-dot" aria-hidden="true"></span>Info</h4>
+<span class="site-footer__heading-line" aria-hidden="true"></span>
+</div>
+<ul class="site-footer__links">
+<li><a href="overview.html">Home</a></li>
+<li><a href="about.html">About Us</a></li>
+<li><a href="verticals.html">Business verticals</a></li>
+<li><a href="career.html">Career</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+<div class="site-footer__col site-footer__col--contact">
+<div class="site-footer__heading-wrap">
+<h4 class="site-footer__heading"><span class="site-footer__heading-dot" aria-hidden="true"></span>Contact info</h4>
+<span class="site-footer__heading-line" aria-hidden="true"></span>
+</div>
+<ul class="site-footer__contact">
+<li>
+<span class="site-footer__contact-icon" aria-hidden="true"><span class="material-symbols-outlined">location_on</span></span>
+<span class="site-footer__contact-text"><span class="site-footer__contact-line">No. 09, Om Ganesh Nagar, 3rd Cross East,</span><span class="site-footer__contact-line">Vadavalli, Coimbatore – 641041, India</span></span>
+</li>
+<li>
+<span class="site-footer__contact-icon" aria-hidden="true"><span class="material-symbols-outlined">mail</span></span>
+<a href="mailto:business@icityinc.com">business@icityinc.com</a>
+</li>
+<li>
+<span class="site-footer__contact-icon" aria-hidden="true"><span class="material-symbols-outlined">call</span></span>
+<a href="tel:+918098431431">+91-80984 31431</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="site-footer__legal">
+<p>© 2026 Icity Inc. <a href="#">Privacy policy</a>. All rights reserved.</p>
+</div>
+</footer>
+<script src="../js/navbar.js"></script>
+</body></html>
