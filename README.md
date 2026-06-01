@@ -19,9 +19,8 @@ The iCity Inc Website is a modern, responsive corporate website designed to show
 ## Technologies Used
 
 * HTML5
-* CSS3
-* JavaScript
-* Bootstrap
+* Tailwind css
+* React js
 * Responsive Web Design Principles
 
 ## Project Structure
@@ -88,7 +87,7 @@ The website has been tested for:
 
 ## Author
 
-Developed by Nisha S
+Developed by Nisha
 
 ## License
 
